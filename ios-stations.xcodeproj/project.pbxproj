@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A924F9F2C0DB42500E2684D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A924F9D2C0DB42500E2684D /* InfoPlist.strings */; };
 		617F70BE29C2BD4B00B7AFFE /* testResources in Resources */ = {isa = PBXBuildFile; fileRef = 617F70BD29C2BD4B00B7AFFE /* testResources */; };
 		BE245141266FBEE00038AD81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE245140266FBEE00038AD81 /* AppDelegate.swift */; };
 		BE245143266FBEE00038AD81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE245142266FBEE00038AD81 /* SceneDelegate.swift */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A924F9E2C0DB42500E2684D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3A924FA02C0DB43900E2684D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		617F70BD29C2BD4B00B7AFFE /* testResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = testResources; sourceTree = "<group>"; };
 		BE24513D266FBEE00038AD81 /* ios-stations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-stations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE245140266FBEE00038AD81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +131,7 @@
 				BE245149266FBEE10038AD81 /* Assets.xcassets */,
 				BE24514B266FBEE10038AD81 /* LaunchScreen.storyboard */,
 				BE665EE026817723006F4F2C /* Info.plist */,
+				3A924F9D2C0DB42500E2684D /* InfoPlist.strings */,
 			);
 			path = "ios-stations";
 			sourceTree = "<group>";
@@ -220,8 +224,9 @@
 		BE245135266FBEE00038AD81 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					BE24513C266FBEE00038AD81 = {
 						CreatedOnToolsVersion = 12.5;
@@ -266,6 +271,7 @@
 				BE24514D266FBEE10038AD81 /* LaunchScreen.storyboard in Resources */,
 				BE24514A266FBEE10038AD81 /* Assets.xcassets in Resources */,
 				BE245148266FBEE00038AD81 /* Main.storyboard in Resources */,
+				3A924F9F2C0DB42500E2684D /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +339,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		3A924F9D2C0DB42500E2684D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A924F9E2C0DB42500E2684D /* en */,
+				3A924FA02C0DB43900E2684D /* ja */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		BE245146266FBEE00038AD81 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -398,6 +413,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -461,6 +477,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -487,6 +504,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "ios-stations/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -505,6 +523,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "ios-stations/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
